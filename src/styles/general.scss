@@ -13,9 +13,13 @@ li {
 }
 
 body {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 80px 1fr;
     background-color: #FFFFFF;
     max-width: 1920px;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .visually-hidden {
@@ -33,6 +37,8 @@ body {
 
 $purple: #5957DB;
 $lightPurple: #ECF2FF;
+$white: #FFFFFF;
+$green: #43D000;
 
 
 

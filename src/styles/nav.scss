@@ -1,6 +1,45 @@
 @import "general.scss";
 
 .nav {
+    display: grid;
+    grid-template-rows: 1fr auto;
     background-color: $purple;
     padding: 20px 0 30px 30px;
+    color: $white;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 23px 0 23px 30px;
+
+    img {
+        margin-right: 12px;
+    }
+}
+
+.nav__profile {
+    display: flex;
+    align-items: center;
+}
+
+.nav__profile--p {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.nav__profile--img {
+    margin-right: 12px;
+}
+
+.nav__link {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
 }

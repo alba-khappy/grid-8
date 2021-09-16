@@ -1,0 +1,110 @@
+main.main
+    section.choice 
+        button.choice__button.choice__button--prev 
+        button.choice__button.choice__button--date.choice__button-date--1 
+            p.choice__p--date 22 сентября
+            p четверг
+        button.choice__button.choice__button--date.choice__button-date--2
+            p.choice__p--date 23 сентября
+            p пятница
+        button.choice__button.choice__button--date.choice__button-date--3
+            p.choice__p--date 24 сентября
+            p суббота
+        button.choice__button.choice__button--next
+
+        h2.choice__cinema-type--2d 2D:
+        ul.choice__time-list--2d
+            li.choice__time-item
+                button.choice__time-button
+                    span 12:00 - 13:30
+            li.choice__time-item
+                button.choice__time-button 
+                    span 16:30 - 18:00
+            li.choice__time-item
+                button.choice__time-button 
+                    span 20:00 - 21:30
+
+        h2.choice__cinema-type--3d 3D:
+        ul.choice__time-list--3d
+            li.choice__time-item
+                button.choice__time-button
+                    span 12:00 - 13:30
+            li.choice__time-item
+                button.choice__time-button 
+                    span 16:30 - 18:00
+            li.choice__time-item
+                button.choice__time-button 
+                    span 20:00 - 21:30
+        div.choice__screen
+            p Экран
+
+        h2.choice__seat--1 РЯД 1
+        ul.choice__seat--list-1
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+
+        h2.choice__seat--2 РЯД 2
+        ul.choice__seat--list-2
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+            li.choice__seat--item
+                button.choice__seat--button
+
+        ul.seat-param-list
+            li.seat-param-item Место занято
+            li.seat-param-item Место свободно
+            li.seat-param-item Выбранное место
+
+
+
+    section.result
+        section.result-ticket
+            .ticket-header 
+                p Билеты
+                p × 2
+            .ticket-param 
+                p Фильм:
+                p.ticket-data Кекс наносит ответный удар
+                p Дата:
+                p.ticket-data 23 сентября
+                p Время:
+                p.ticket-data 20:00
+                p Ряд:
+                p.ticket-data 2
+                p Места
+                p.ticket-data 4, 5
+
+            .ticket-barcode
+                img(src="./images/un.svg", alt="")
+
+        section.result-payment
+            h3.result-payment__h3 Оплата
+            div.result-payment__card
+                p.card-name SuperCard
+                p.card-number 1234 5678 9012 3456
+                p.card-personal Opoznanniy Enot 
+                p.card-date 20/99
+            button.result-payment__add-card
+            button.result-payment__result-button ОПЛАТИТЬ 800 Р

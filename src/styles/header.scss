@@ -1,6 +1,7 @@
 @import "general.scss";
 
 .header {
+    grid-area: 1/1/2/3;
     display: grid;
     align-items: center;
     grid-template-columns: 200px 1fr auto;
@@ -20,8 +21,13 @@
     display: flex;
 }
 
+.header__breadcrumbs-item:not(:last-child) {
+    margin-right: 46px;
+}
+
 .header__breadcrumbs-link {
     color: $purple;
+    text-transform: uppercase;
 }
 
 .header__cinema-name {
@@ -32,4 +38,5 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
+    text-transform: uppercase;
 }

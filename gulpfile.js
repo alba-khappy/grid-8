@@ -54,7 +54,7 @@ const htmlMinify = ()=> {
 }
 
 const scss = () => {
-    return src('src/styles/styles.scss')
+    return src('src/styles/*.scss')
     .pipe(sass())
     .pipe(autoprefixer({
         cascade:false
@@ -104,13 +104,15 @@ const images = () => {
 }
 
 watch('src/pug/**/*.pug', puggy);
+watch('src/**/*.html', htmlMinify);
 watch('src/images/**/*.jpg', images);
 watch('src/images/**/*.png', images);
-watch('src/**/*.html', htmlMinify);
+watch('src/images/**/*.svg', images);
 watch('src/styles/*.scss', scss);
+watch('src/styles/*.css', styles);
 watch('src/js/*.js', scripts);
 
 
 exports.clean = clean;
 exports.htmlMinify = htmlMinify;
-exports.default = series(clean, puggy, images, scss, fonts, scripts, htmlMinify, watchFiles);
+exports.default = series(clean, puggy, images, styles, scss, fonts, scripts, htmlMinify, watchFiles);
